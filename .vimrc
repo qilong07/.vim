@@ -33,6 +33,9 @@ call plug#begin('~/.vim/plugged')
 " Plugins from github repos:
 "
 
+" Better file browser
+Plug 'scrooloose/nerdtree'
+
 
 "
 " Tell vim-plug we finished declaring plugins, so it can load them
