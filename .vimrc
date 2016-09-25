@@ -47,6 +47,9 @@ Plug 'taglist.vim'
 " search and replace
 Plug  'mileszs/ack.vim'
 
+" aoto generate tags file
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 
 "
 " Tell vim-plug we finished declaring plugins, so it can load them
@@ -172,8 +175,15 @@ let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Use_Right_Window=1
 
+" easytag config
+set tags=./tags;
+let g:easytags_dynamic_files = 1
+"let g:easytags_file = './tags'"
+
 
 " ctrlp config
-let g:ctrlp_extensions = ['tag']
-let g:ctrlp_types = ['fil', 'tag', 'mru'] 
-let g:ctrlp_cmd = 'CtrlPTag'
+" let g:ctrlp_extensions = ['tag']
+"let g:ctrlp_types = ['fil', 'tag', 'mru'] 
+let g:ctrlp_types = ['fil', 'mru'] 
+"let g:ctrlp_cmd = 'CtrlPTag'
+let g:ctrlp_cmd = 'CtrlPMRU'
