@@ -182,8 +182,9 @@ let g:easytags_dynamic_files = 1
 
 
 " ctrlp config
-" let g:ctrlp_extensions = ['tag']
-"let g:ctrlp_types = ['fil', 'tag', 'mru'] 
-let g:ctrlp_types = ['fil', 'mru'] 
-"let g:ctrlp_cmd = 'CtrlPTag'
-let g:ctrlp_cmd = 'CtrlPMRU'
+let g:ctrlp_regexp = 1
+let g:ctrlp_extensions = ['tag']
+let g:ctrlp_types = ['fil', 'tag', 'mru'] 
+"let g:ctrlp_types = ['fil', 'mru'] 
+let g:ctrlp_cmd = 'CtrlPTag'
+"let g:ctrlp_cmd = 'CtrlPMRU'
